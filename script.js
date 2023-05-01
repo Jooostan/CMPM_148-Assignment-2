@@ -1,44 +1,31 @@
 const fillers = {
-    // Pizza Stuff
-    size: ["Small 10\"", "Medium 12\"", "Large 14\""],
-    sauce: ["Robust Inspired Tomato Sauce", "Hearty Marinara Sauce", "Honey BBQ Sauce", "Garlic Parmesan Sauce", "Alfredo Sauce", "Ranch"],
-    amount: ["Light", "Extra"],
-
-    // Toppings
-    meat: ["Ham", "Beef", "Salami", "Pepperoni", "Italian Sausage", "Premium Chicken", "Bacon", "Philly Steak"], 
-    non_meat: ["Hot Buffalo Sauce", "Pineapple", "Garlic", "Cheddar Cheese", "Jalapeno Peppers", "Green Peppers", "Onions", "Spinach", "Banana Peppers", "Mushrooms"],
-    toppings: ["$meat", "$non_meat", "$amount $meat", "$amount $non_meat", "$meat, $meat, and $meat", "$non_meat, $non_meat, and $non_meat", "$meat and $non_meat"],
-    
-    // Sauce
-    dips: ["Garlic Dipping Sauce", "Ranch", "Marinara Dipping Sauce","Blue Cheese", "Sweet Mango Habanero Sauce"],
-
-    // Breads
-    breads: ["Parmesan Bread Twists", "Garlic Bread Twists", "Stuffed Cheesy Bread", "Stuffed Cheesy Bread with Spinach & Feta"],
-
-    // Desserts
-    desserts: ["Cinnamon Bread Twists", "Marbled Cookie Brownies", "Chocolate Lava Crunch Cakes", "Baked Apple Dip & Cinnamon Bread Twists"],
-
-    // Ordering Stuff
-    ordertype: ["Carryout", "Delivery to $streetnum $street, $city"],
-    streetnum: ["2391", "3555", "512", "1659", "6059", "2682", "5313", "930", "907", "3853", "106"],
-    street: ["Mission St", "Clares St", "Main Street", "Branham Lane", "Union Avenue", "Prospect Rd", "Hamilton Ave Suite", "Del Mar Ave"],
-    city: ["Santa Cruz", "Capitola", "Watsonville", "San Jose", "Campbell", "San Francisco", "Sacramento", "Oakland", "San Mateo", "Rocklin"],
-    words: ["correct", "right", "accurate"], 
-    
+    welcome: ["Salutations", "Welcome", "Greetings", "Howdy", "Good evening", "Good Day", "Pleased to meet you"],
+    steal: ["Stealing from", "Theiving from", "Pilfering", "Plundering", "Robbing"],
+    enemies: ["Animalist Newyorkers", "Rodent Testing Scientists", "Sexist Cheese Mongers", "Pest Control & Exterminators"],
+    collect: ["Gather", "Collect", "Assemble", "Compile", "Amass", "Secure"],
+    capture: ["Apprehend", "Catch", "Ensnare"],
+    item: ["supplies", "camouflage", "disguises", "human disguise", "dummy rats", "intel", "cheese", "traps"],
+    peeps: ["new recuits", "the fleas", "the mice", "the beavers", "the snakes"],
+    perps: ["the human", "the guards", "the person", "the exterminator", "the cats", "the vacuum", "the big cheese"],
+    task: ["$collect the $item", "$capture the $perps", "$steal $perps", "$collect $peeps"]
   };
   
-  const template = `Thank you for ordering with Dominos! Just to double check your order... 
+  const template = `$welcome NEW RECRUITS to R.A.T. K.I.N.G (RODENTS • AGAINST • TYRANNY) (KEEN • INTELLECTUAL • NOBLE • GALLANT)
+  For this upcoming heist we'll be... $steal the $enemies. We're in the midst of preparing for our largest heist yet and we'll need
+  all of the help we can get.
+
+  Here are the various tasks that we'll need to complete.
   
-  - I have a $size pizza with $sauce topped with $toppings
-
-  - I also have some extra $sauce on the side 
-  
-  - Along with those I have some $breads and some $desserts
-
-  - Lastly I have this order marked for $ordertype
-
-  Let me know if your order is $words!
-
+  (13) $task
+  (11) $task
+  (10) $task
+   (9) $task
+   (8) $task
+   (7) $task
+   (6) $task
+   (5) $task
+   (4) $task
+   (2) $task
   `;
   
   
